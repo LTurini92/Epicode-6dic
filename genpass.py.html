@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>genpass.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+genpass.py</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">random</span>
+<span class="s0">import </span><span class="s1">string</span>
+
+<span class="s0">def </span><span class="s1">psw_generator():</span>
+    <span class="s1">print(</span><span class="s2">&quot;scelta della password&quot;</span><span class="s1">)</span>
+
+    <span class="s1">alphanum_chars = string.digits + string.ascii_letters</span>
+
+    <span class="s0">if </span><span class="s1">input(</span><span class="s2">&quot;password Semplice o Complessa? 1/2 &quot;</span><span class="s1">) == </span><span class="s2">&quot;1&quot;</span><span class="s1">:</span>
+        <span class="s1">lunghezza = </span><span class="s3">8</span>
+        <span class="s1">tipo = alphnum_chars</span>
+    <span class="s0">else</span><span class="s1">:</span>
+        <span class="s1">lunghezza = </span><span class="s3">20</span>
+        <span class="s1">tipo = alphanum_chars</span>
+
+
+    <span class="s1">print(</span><span class="s2">&quot;La password generata è: {psw}&quot;</span><span class="s1">)</span>
+
+</pre>
+</body>
+</html>
